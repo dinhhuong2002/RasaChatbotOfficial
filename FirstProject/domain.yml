@@ -1,0 +1,89 @@
+version: "3.0"
+
+intents:
+  - hello
+  - goodbye
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - sign_in
+  - sign_up
+  - sign_up_student
+  - sign_up_parents
+  - sign_up_teacher
+  - sign_up_school
+  - sign_up_Education_Department
+  - add_GO
+
+responses:
+  utter_hello:
+  - text: "Hey! How are you?"
+  - text: "Xin chào bạn. Tiếp tục trò chuyện với mình nhé!"
+  - text: "Rất vui được trò chuyện cùng bạn. Mình có thể giúp gì cho bạn?"
+    buttons:
+      - title: "Đăng ký tài khoản"
+        payload: "/sign_up"
+      - title: "Đăng nhập"
+        payload: "/sign_in"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by VTC Online."
+  - text: "Tôi là iTalk. Một chatbot được phát triển bởi VTC Online."
+  - text: "Mình là iTalk. Trợ lý ảo được đảo tạo để hỗ trợ bạn. Đừng ngần ngại, mình luôn sẵn sàng giúp đỡ bạn!"
+  - text: "Luôn sẵn sàng giúp đỡ bạn, mình là trợ lý ảo của bạn!"
+
+  utter_sign_in:
+    - text: ""
+
+  utter_sign_up:
+    - text: "Chọn tài khoản bạn muốn đăng ký: "
+      buttons:
+        - title: "Tài khoản Học sinh"
+          payload: "/sin_up_student"
+        - title: "Tài khoản Phụ huynh"
+          payload: "/sign_up_parents"
+        - title: "Tài khoản Giáo viên lớp"
+          payload: "/sign_up_teacher"
+        - title: "Tài khoản Nhà trường"
+          payload: "/sign_up_school"
+        - title: "Tài khoản Phòng/Sở Giáo dục"
+          payload: "/sign_up_Education_Department"
+
+  utter_sin_up_student:
+    - text:
+
+  utter_sign_up_parents:
+    - text:
+
+  utter_sign_up_teacher:
+    - text:
+
+  utter_sign_up_school:
+    - text:
+
+  utter_sign_up_Education_Department:
+    - text:
+
+  utter_add_GO:
+    - text: "Để nạp GO, có 3 cách sau: \n\t - Nạp GO qua thẻ game.\n\t - Nạp GO qua chuyển khoản ngân hàng.\n\t - Nạp GO qua ví điện tử.\n Vui lòng lựa chọn cách bạn muốn nạp GO:  "
+      buttons:
+
+
+
+session_config:
+  session_expiration_time: 60       #time for one session, minutes
+  carry_over_slots_to_new_session: true     #save session

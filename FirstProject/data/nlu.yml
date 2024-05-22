@@ -1,0 +1,159 @@
+version: "3.0"
+
+nlu:
+- intent: hello
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào
+    - chào
+    - chào buổi sáng
+    - hiiiiiiiiii
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - What is your name?
+    - Tên bạn là gì?
+    - Your name?
+    - bạn tên là gì?
+    - bạn là con người hả?
+    -bạn tên là gì?
+
+- intent: sign_in
+  examples:
+    -
+    -
+
+    
+- intent: sign_up
+  examples: |
+    - Tôi muốn đăng ký tài khoản
+    - Đăng ký tài khoản
+    - i want to sign up
+    - Đăng ký
+
+- intent: sign_up_student
+  examples: |
+    - Tôi muốn đăng ký tài khoản dành cho học sinh
+    - Đăng kí tài khoản học sinh
+    - học sinh
+    - sign up with student account
+    - đăng ký tài khoản học sinh
+    - tài khoản học sinh
+
+- intent: sign_up_parents
+  examples: |
+    - đăng ký tài khoản phụ huynh
+    - tôi muốn đăng ký tài khoản phụ huynh
+    - phụ huynh
+    - account for parents
+    - sign up with parents account
+    - parents
+
+- intent: sign_up_teacher
+  examples: |
+    - Tôi muốn đăng ký tài khoản dành cho giáo viên
+    - Đăng kí tài khoản giáo viên
+    - giáo viên
+    - sign up with teacher account
+    - đăng ký tài khoản giáo viên
+    - tài khoản cho giáo viên
+    - teacher
+
+- intent: sign_up_school
+  examples: |
+    - Tôi muốn đăng ký tài khoản dành cho nhà trường
+    - Đăng kí tài khoản cấp trường
+    - nhà trường
+    - sign up with teacher account
+    - đăng ký tài khoản trường học
+    - tài khoản cho nhà trường
+    - school
+
+- intent: sign_up_Education_Department
+  examples: |
+    - Tôi muốn đăng ký tài khoản dành cho Phòng giáo dục
+    - Đăng kí tài khoản sở giáo dục
+    - phòng giáo dục
+    - đăng ký tài khoản sở giáo dục
+    - đăng ký tài khoản phòng giáo dục
+    - tài khoản cho phòng/sở giáo dục
+    - sở giáo dục và đao tạo
+    - Phòng giáo dục và đào tạo
+
+- intent: add_GO
+  examples: |
+    - Hướng dẫn nạp go
+    - nạp go như thế nào?
+    - Tôi muốn nạp go
+    - mình muốn nạp go
+    
